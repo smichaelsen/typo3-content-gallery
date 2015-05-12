@@ -1,0 +1,1 @@
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:content_gallery/Configuration/TypoScript/Gridelements" extensions="ts">
