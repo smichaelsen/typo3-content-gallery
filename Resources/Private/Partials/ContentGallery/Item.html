@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+
+<body>
+<f:section name="main">
+	<div class="contentgallery-element col-lg-3">
+		<div class="contentgallery-content">
+			{data -> f:cObject(typoscriptObjectPath:"tt_content")}
+		</div>
+		<div class="contentgallery-thumbnail">
+			<f:if condition="{data.tx_contentgallery_thumbnail}">
+				<v:content.resources.fal table="tt_content" field="tx_contentgallery_thumbnail" record="{data}" as="thumbnail">
+					<img src="{f:uri.image(src:'{thumbnail.0.id}')}"/>
+				</v:content.resources.fal>
+			</f:if>
+		</div>
+	</div>
+</f:section>
+
+</body>

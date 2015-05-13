@@ -1,0 +1,9 @@
+plugin.tx_contentgallery {
+	# cat=plugin.tx_contentgallery/file; type=boolean; label=Include jQuery:This extension required jQuery, please enable this option if jQuery is *not* already included in your site.
+	includeJQuery = 0
+	view {
+		templateRootPath = EXT:content_gallery/Resources/Private/Templates/
+		partialRootPath = EXT:content_gallery/Resources/Private/Partials/
+		layoutRootPath = EXT:content_gallery/Resources/Private/Layouts/
+	}
+}

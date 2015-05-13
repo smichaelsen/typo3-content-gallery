@@ -1,16 +1,3 @@
-<div xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+<f:render partial="Item" arguments="{data:data}" section="main"/>
 
-	<div class="content-gallery-element">
-		<div class="content-gallery-content">
-			{data -> f:cObject(typoscriptObjectPath:"tt_content")}
-		</div>
-		<div class="content-gallery-thumbnail">
-			<f:if condition="{data.tx_contentgallery_thumbnail}">
-				<v:content.resources.fal table="tt_content" field="tx_contentgallery_thumbnail" record="{data}" as="thumbnail">
-					<f:image src="{thumbnail.0.id}" />
-				</v:content.resources.fal>
-			</f:if>
-		</div>
-	</div>
 
-</div>
