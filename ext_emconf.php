@@ -14,6 +14,7 @@ $EM_CONF['content_gallery'] = array(
 	'constraints' => array(
 		'depends' => array(
 			'typo3' => '6.2.0-7.99.99',
+			'gridelements' => '3.2.0-3.2.99',
 			'vhs' => '2.3.0-2.3.99',
 		),
 	),
