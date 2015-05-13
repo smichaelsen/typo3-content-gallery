@@ -3,6 +3,12 @@
 	<file source-language="en" datatype="plaintext" original="messages">
 		<header/>
 		<body>
+			<trans-unit id="tt_content.tx_contentgallery_class" xml:space="preserve">
+				<source>Gallery Thumbnail Class</source>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_contentgallery_label" xml:space="preserve">
+				<source>Gallery Thumbnail Label</source>
+			</trans-unit>
 			<trans-unit id="tt_content.tx_contentgallery_thumbnail" xml:space="preserve">
 				<source>Gallery Thumbnail</source>
 			</trans-unit>
