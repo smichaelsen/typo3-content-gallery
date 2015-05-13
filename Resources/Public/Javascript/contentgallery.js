@@ -23,7 +23,7 @@
 			(function(){
 				elements.find('.contentgallery-thumbnail').on('click', function(){
 					elementContents.hide();
-					$(this).data('elementContent').show();
+					$(this).data('elementContent').show().trigger('initializeChildren');
 				}).first().click();
 			}());
 
